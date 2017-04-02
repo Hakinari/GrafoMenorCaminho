@@ -162,11 +162,11 @@ public class SearchGraphAlgorithms {
         }
 
 		/**
-		 * Returns the lowest path from vertex "v" (from up class) to vertex "vertex";
-		 *
-		 * @param vertex the number of the vertex that will be returned the lowest path
-		 * 
-		 * @returns A linkedList of Integers containing the vertex order in the  lowest path
+		 * Retorna o caminho mais baixo do vértice "v" (da classe up) para o vértice "vértice";
+                 *
+                 * @param vertex o número do vértice que será retornado o caminho mais baixo
+                 *
+                 * @returns Uma lista vinculada de inteiros que contém a ordem do vértice no caminho mais baixo
 		 */
         public LinkedList<Integer> getPathFrom(int vertex) {
             return this.paths.get(vertex);
@@ -174,13 +174,13 @@ public class SearchGraphAlgorithms {
 
 		
 		/**
-		 * Returns the lowest distance from vertex "v" (from up class) to vertex "vertex";
-		 *
-		 * @param vertex the number of the vertex that will be returned the lowest distance
-		 * 
-		 * @returns A double containg the lowest distance
-		 */
-        public double getDistFrom(int vertex) {
+		* Retorna a menor distância do vértice "v" (da classe up) para o vértice "vértice";
+                *
+                * @param vertex o número do vértice que será retornado a menor distância
+                *
+                * @returns Um duplo contendo a menor distância
+		*/
+        public double getDistanciaDe(int vertex) {
             return this.dist[vertex];
         }
     }
