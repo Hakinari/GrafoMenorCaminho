@@ -24,7 +24,7 @@ public class Main {
         
         System.out.println("\n\nMenor Distancia para o ");
         for(int i = 0; i < 8; i++) {
-            System.out.println("Vertice " + i + " " + so.getDistFrom(i));
+            System.out.println("Vertice " + i + " " + so.getDistanciaDe(i));
         }
     }
 }
