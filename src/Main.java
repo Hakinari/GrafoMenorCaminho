@@ -7,14 +7,14 @@ public class Main {
     public static void main(String[] args) throws java.io.IOException { 
 	
         //Cria OBJT DE BUSCA NO GRAFO
-		SearchGraphAlgorithms ga = new SearchGraphAlgorithms();
+		AlgoritmoPesquisaGrafo ga = new AlgoritmoPesquisaGrafo();
 
-        //CRIA O GRAFO A APRTIR DO TXT MoTHER FUCKER DAORA
-        Graph<Double,Double> mg = new MatGraph("src//grafo.txt");
+        //CRIA O GRAFO A APRTIR DO TXT 
+        Graph<Double,Double> mg = new MatGrafo("src//grafo.txt");
 
         //Cria um NOVO objeto de busca  de tipo SearchInfo(parece ser da biblioteca do java)
-		//usando o objto SearchGraphAlgorithms criado iniciando a busca pelo grafo (aqlgoritmo, inicio, grafo)
-        SearchGraphAlgorithms.SearchInfo so = ga.search(TypeSearchEnum.DIJKSTRA, 4, mg);   
+		//usando o objto AlgoritmoPesquisaGrafo criado iniciando a busca pelo grafo (aqlgoritmo, inicio, grafo)
+        AlgoritmoPesquisaGrafo.PesquisaInfo so = ga.pequisa(PesquisaTipoEnum.DIJKSTRA, 4, mg);   
         
         System.out.println("A partir do vertice 4: ");
         System.out.println("Menor Caminho para o ");
