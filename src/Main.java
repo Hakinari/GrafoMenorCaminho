@@ -10,7 +10,7 @@ public class Main {
 		SearchGraphAlgorithms ga = new SearchGraphAlgorithms();
 
         //CRIA O GRAFO A APRTIR DO TXT MoTHER FUCKER DAORA
-        Graph<Double,Double> mg = new MatGraph("graph.txt");
+        Graph<Double,Double> mg = new MatGraph("src//grafo.txt");
 
         //Cria um NOVO objeto de busca  de tipo SearchInfo(parece ser da biblioteca do java)
 		//usando o objto SearchGraphAlgorithms criado iniciando a busca pelo grafo (aqlgoritmo, inicio, grafo)
